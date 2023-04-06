@@ -15,9 +15,6 @@ struct TrendingItemView: View {
     var body: some View {
         VStack {
             poster
-            
-            Text(result.title ?? "")
-                .font(.caption)
         }
     }
 }
