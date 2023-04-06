@@ -10,7 +10,7 @@ import Foundation
 // MARK: - Originals
 struct Originals: Codable {
     let page: Int
-    let results: [Result]
+    let results: [Original]
     let totalPages, totalResults: Int
 
     enum CodingKeys: String, CodingKey {
@@ -21,13 +21,13 @@ struct Originals: Codable {
 }
 
 // MARK: - Result
-struct Result: Codable {
+struct Original: Codable {
     let backdropPath, firstAirDate: String
     let genreIDS: [Int]
     let id: Int
     let name: String
     let originCountry: [String]
-    let originalLanguage: OriginalLanguage
+    let originalLanguage: Language
     let originalName, overview: String
     let popularity: Double
     let posterPath: String
@@ -47,11 +47,4 @@ struct Result: Codable {
         case voteAverage = "vote_average"
         case voteCount = "vote_count"
     }
-}
-
-enum OriginalLanguage: String, Codable {
-    case en = "en"
-    case es = "es"
-    case ja = "ja"
-    case ko = "ko"
 }
