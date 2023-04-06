@@ -12,7 +12,7 @@ struct OriginalsView: View {
     
     var body: some View {
         
-        ScrollView(.horizontal) {
+        ScrollView(.horizontal, showsIndicators: false) {
             LazyHStack {
                 ForEach(vm.originals.results) { result in
                     OriginalsItemView(original: result)
