@@ -40,10 +40,11 @@ private extension OriginalsItemView {
                 image
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                    .frame(height: 250)
+                    .frame(width: 160, height: 240)
                     .clipped()
             } placeholder: {
                 ProgressView()
+                    .frame(width: 160, height: 240)
             }
             .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
         }

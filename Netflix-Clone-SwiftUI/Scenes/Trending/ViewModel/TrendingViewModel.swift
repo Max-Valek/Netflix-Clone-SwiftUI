@@ -15,7 +15,7 @@ final class TrendingViewModel: ObservableObject {
     
     init() {
         self.trending = try! StaticJSONMapper.decode(file: "Trending", type: Trending.self)
-        print(self.trending)
+//        print(self.trending)
     }
     
 }

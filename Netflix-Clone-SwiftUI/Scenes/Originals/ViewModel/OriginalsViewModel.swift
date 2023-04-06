@@ -13,7 +13,7 @@ final class OriginalsViewModel: ObservableObject {
     
     init() {
         self.originals = try! StaticJSONMapper.decode(file: "Originals", type: Originals.self)
-        print(self.originals)
+//        print(self.originals)
     }
     
 }
