@@ -14,6 +14,7 @@ struct HomeView: View {
             
             VStack(alignment: .leading) {
                 Text("Trending")
+                    .fontWeight(.bold)
                     .padding(.leading)
                 
                 TrendingView()
@@ -22,10 +23,21 @@ struct HomeView: View {
             
             VStack(alignment: .leading) {
                 Text("Netflix Originals")
+                    .fontWeight(.bold)
                     .padding(.leading)
                 
                 OriginalsView()
             }
+            .padding(.bottom)
+            
+            VStack(alignment: .leading) {
+                Text("Top Rated")
+                    .fontWeight(.bold)
+                    .padding(.leading)
+                
+                TopRatedView()
+            }
+            .padding(.bottom)
         }
         .preferredColorScheme(.dark)
     }
