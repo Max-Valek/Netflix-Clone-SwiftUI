@@ -8,13 +8,44 @@
 import SwiftUI
 
 struct OriginalsItemView: View {
+    
+    let original: Original
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            poster
+        }
     }
 }
 
 struct OriginalsItemView_Previews: PreviewProvider {
+    
+    private static var previewResult: Original {
+        let result = try! StaticJSONMapper.decode(file: "Originals", type: Originals.self)
+        return result.results[0]
+    }
+    
     static var previews: some View {
-        OriginalsItemView()
+        OriginalsItemView(original: previewResult)
+    }
+}
+
+private extension OriginalsItemView {
+    
+    @ViewBuilder
+    var poster: some View {
+        if let posterURL = URL(string: "https://image.tmdb.org/t/p/w500\(original.posterPath)") {
+            
+            AsyncImage(url: posterURL) { image in
+                image
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(height: 250)
+                    .clipped()
+            } placeholder: {
+                ProgressView()
+            }
+            .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+        }
     }
 }

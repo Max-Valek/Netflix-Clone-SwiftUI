@@ -21,7 +21,7 @@ struct Originals: Codable {
 }
 
 // MARK: - Result
-struct Original: Codable {
+struct Original: Codable, Identifiable {
     let backdropPath, firstAirDate: String
     let genreIDS: [Int]
     let id: Int
