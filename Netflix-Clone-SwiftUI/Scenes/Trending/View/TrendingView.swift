@@ -13,7 +13,7 @@ struct TrendingView: View {
     
     var body: some View {
         
-        ScrollView(.horizontal) {
+        ScrollView(.horizontal, showsIndicators: false) {
             LazyHStack {
                 ForEach(vm.trending.results) { result in
                     TrendingItemView(result: result)

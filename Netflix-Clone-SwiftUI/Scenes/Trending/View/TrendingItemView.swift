@@ -45,6 +45,7 @@ private extension TrendingItemView {
                     .clipped()
             } placeholder: {
                 ProgressView()
+                    .frame(height: 250)
             }
             .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
         }
