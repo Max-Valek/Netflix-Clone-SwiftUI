@@ -27,6 +27,7 @@ struct HomeView: View {
                 OriginalsView()
             }
         }
+        .preferredColorScheme(.dark)
     }
 }
 
