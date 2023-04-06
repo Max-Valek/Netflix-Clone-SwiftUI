@@ -26,7 +26,7 @@ struct Result: Codable, Identifiable {
     let backdropPath: String
     let id: Int
     let title: String?
-    let originalLanguage: OriginalLanguage
+    let originalLanguage: Language
     let originalTitle: String?
     let overview, posterPath: String
     let mediaType: MediaType
@@ -66,7 +66,7 @@ enum MediaType: String, Codable {
     case tv = "tv"
 }
 
-enum OriginalLanguage: String, Codable {
+enum Language: String, Codable {
     case en = "en"
     case es = "es"
     case ja = "ja"
