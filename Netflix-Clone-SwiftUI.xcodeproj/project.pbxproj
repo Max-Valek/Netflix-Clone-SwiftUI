@@ -326,6 +326,8 @@
 			dependencies = (
 			);
 			name = "Netflix-Clone-SwiftUI";
+			packageProductDependencies = (
+			);
 			productName = "Netflix-Clone-SwiftUI";
 			productReference = 9D6CB6E129DF46EB000C57C2 /* Netflix-Clone-SwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -354,6 +356,8 @@
 				Base,
 			);
 			mainGroup = 9D6CB6D829DF46EB000C57C2;
+			packageReferences = (
+			);
 			productRefGroup = 9D6CB6E229DF46EB000C57C2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";

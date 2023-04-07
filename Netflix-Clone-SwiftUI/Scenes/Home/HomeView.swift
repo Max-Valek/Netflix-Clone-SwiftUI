@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct HomeView: View {
+    
     var body: some View {
         
         VStack {
-            
             HomeTopView()
             
             ScrollView(showsIndicators: false) {
@@ -35,6 +35,12 @@ struct HomeView: View {
                     OriginalsView()
                 }
                 .padding(.bottom)
+                
+                HStack {
+                    Text("TV Shows")
+                    Text("Movies")
+                    Text("Categories")
+                }
                 
                 VStack(alignment: .leading) {
                     Text("Top Rated")
@@ -90,9 +96,10 @@ struct HomeView: View {
                 }
                 .padding(.bottom)
             }
-            .preferredColorScheme(.dark)
         }
+        .preferredColorScheme(.dark)
     }
+    
 }
 
 struct HomeView_Previews: PreviewProvider {
@@ -153,7 +160,7 @@ extension HomeView {
                     .padding(.vertical, 4)
                     .foregroundColor(.white)
                     .background(Color(.darkGray), in: RoundedRectangle(cornerRadius: 4))
-
+                    
                 }
                 
             }
