@@ -24,21 +24,25 @@ struct HomeView: View {
                     featured
                 }
                 
-                CategoryView(title: "Trending", category: .trending, vm: CategoryViewModel(category: .trending))
+                ForEach(Category.allCases) { category in
+                    CategoryView(title: category.title, category: category, vm: CategoryViewModel(category: category))
+                }
                 
-                CategoryView(title: "Netflix Originals", category: .originals, vm: CategoryViewModel(category: .originals))
-                
-                CategoryView(title: "Top Rated", category: .topRated, vm: CategoryViewModel(category: .topRated))
-                
-                CategoryView(title: "Action", category: .action, vm: CategoryViewModel(category: .action))
-                
-                CategoryView(title: "Comedy", category: .comedy, vm: CategoryViewModel(category: .comedy))
-                
-                CategoryView(title: "Horror", category: .horror, vm: CategoryViewModel(category: .horror))
-                
-                CategoryView(title: "Romance", category: .romance, vm: CategoryViewModel(category: .romance))
-                
-                CategoryView(title: "Documentaries", category: .documentary, vm: CategoryViewModel(category: .documentary))
+//                CategoryView(title: "Trending", category: .trending, vm: CategoryViewModel(category: .trending))
+//
+//                CategoryView(title: "Netflix Originals", category: .originals, vm: CategoryViewModel(category: .originals))
+//
+//                CategoryView(title: "Top Rated", category: .topRated, vm: CategoryViewModel(category: .topRated))
+//
+//                CategoryView(title: "Action", category: .action, vm: CategoryViewModel(category: .action))
+//
+//                CategoryView(title: "Comedy", category: .comedy, vm: CategoryViewModel(category: .comedy))
+//
+//                CategoryView(title: "Horror", category: .horror, vm: CategoryViewModel(category: .horror))
+//
+//                CategoryView(title: "Romance", category: .romance, vm: CategoryViewModel(category: .romance))
+//
+//                CategoryView(title: "Documentaries", category: .documentary, vm: CategoryViewModel(category: .documentary))
 
             }
         }

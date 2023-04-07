@@ -103,7 +103,6 @@
 		9D6CB6F229DF478F000C57C2 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				9DEAF34829E0D07500AF9DE1 /* Category */,
 				9D6CB6F329DF4797000C57C2 /* Home */,
 			);
 			path = Scenes;
@@ -112,6 +111,7 @@
 		9D6CB6F329DF4797000C57C2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				9DEAF34829E0D07500AF9DE1 /* Category */,
 				9DB8D11029E071950023B857 /* Top */,
 				9D6CB6F429DF47A6000C57C2 /* HomeView.swift */,
 			);
