@@ -21,7 +21,7 @@
 		9D6CB71C29DF63FE000C57C2 /* Originals.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D6CB71B29DF63FE000C57C2 /* Originals.json */; };
 		9D6CB72029DF6A51000C57C2 /* TopRated.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D6CB71F29DF6A51000C57C2 /* TopRated.json */; };
 		9DB8D11229E071CD0023B857 /* HomeTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB8D11129E071CD0023B857 /* HomeTopView.swift */; };
-		9DEAF34329E0C75400AF9DE1 /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAF34229E0C75400AF9DE1 /* HomeModels.swift */; };
+		9DEAF34329E0C75400AF9DE1 /* ItemsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAF34229E0C75400AF9DE1 /* ItemsList.swift */; };
 		9DEAF34D29E0D0E300AF9DE1 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAF34C29E0D0E300AF9DE1 /* CategoryView.swift */; };
 		9DEAF34F29E0D0F200AF9DE1 /* CategoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAF34E29E0D0F200AF9DE1 /* CategoryItemView.swift */; };
 		9DEAF35129E0D10500AF9DE1 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAF35029E0D10500AF9DE1 /* CategoryViewModel.swift */; };
@@ -45,7 +45,7 @@
 		9D6CB71F29DF6A51000C57C2 /* TopRated.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TopRated.json; sourceTree = "<group>"; };
 		9DB8D10F29E06C3D0023B857 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9DB8D11129E071CD0023B857 /* HomeTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopView.swift; sourceTree = "<group>"; };
-		9DEAF34229E0C75400AF9DE1 /* HomeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModels.swift; sourceTree = "<group>"; };
+		9DEAF34229E0C75400AF9DE1 /* ItemsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsList.swift; sourceTree = "<group>"; };
 		9DEAF34C29E0D0E300AF9DE1 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		9DEAF34E29E0D0F200AF9DE1 /* CategoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemView.swift; sourceTree = "<group>"; };
 		9DEAF35029E0D10500AF9DE1 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
@@ -121,7 +121,6 @@
 		9D6CB6F629DF4874000C57C2 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				9D6CB70B29DF569E000C57C2 /* JSON */,
 				9D6CB70829DF55ED000C57C2 /* StaticJSON */,
 				9D6CB6FC29DF4B29000C57C2 /* Model */,
 			);
@@ -131,7 +130,7 @@
 		9D6CB6FC29DF4B29000C57C2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9DEAF34229E0C75400AF9DE1 /* HomeModels.swift */,
+				9DEAF34229E0C75400AF9DE1 /* ItemsList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -139,7 +138,8 @@
 		9D6CB70829DF55ED000C57C2 /* StaticJSON */ = {
 			isa = PBXGroup;
 			children = (
-				9D6CB70929DF5600000C57C2 /* StaticJSONMapper.swift */,
+				9DEAF35529E0D9B800AF9DE1 /* Mapper */,
+				9D6CB70B29DF569E000C57C2 /* JSON */,
 			);
 			path = StaticJSON;
 			sourceTree = "<group>";
@@ -200,6 +200,14 @@
 				9DEAF34E29E0D0F200AF9DE1 /* CategoryItemView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		9DEAF35529E0D9B800AF9DE1 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				9D6CB70929DF5600000C57C2 /* StaticJSONMapper.swift */,
+			);
+			path = Mapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,7 +298,7 @@
 				9DEAF34D29E0D0E300AF9DE1 /* CategoryView.swift in Sources */,
 				9DEAF34F29E0D0F200AF9DE1 /* CategoryItemView.swift in Sources */,
 				9D6CB6F529DF47A6000C57C2 /* HomeView.swift in Sources */,
-				9DEAF34329E0C75400AF9DE1 /* HomeModels.swift in Sources */,
+				9DEAF34329E0C75400AF9DE1 /* ItemsList.swift in Sources */,
 				9D6CB6E529DF46EB000C57C2 /* Netflix_Clone_SwiftUIApp.swift in Sources */,
 				9DEAF35329E0D10F00AF9DE1 /* Category.swift in Sources */,
 			);

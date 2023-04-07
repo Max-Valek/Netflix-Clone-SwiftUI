@@ -27,25 +27,10 @@ struct HomeView: View {
                 ForEach(Category.allCases) { category in
                     CategoryView(title: category.title, category: category, vm: CategoryViewModel(category: category))
                 }
-                
-//                CategoryView(title: "Trending", category: .trending, vm: CategoryViewModel(category: .trending))
-//
-//                CategoryView(title: "Netflix Originals", category: .originals, vm: CategoryViewModel(category: .originals))
-//
-//                CategoryView(title: "Top Rated", category: .topRated, vm: CategoryViewModel(category: .topRated))
-//
-//                CategoryView(title: "Action", category: .action, vm: CategoryViewModel(category: .action))
-//
-//                CategoryView(title: "Comedy", category: .comedy, vm: CategoryViewModel(category: .comedy))
-//
-//                CategoryView(title: "Horror", category: .horror, vm: CategoryViewModel(category: .horror))
-//
-//                CategoryView(title: "Romance", category: .romance, vm: CategoryViewModel(category: .romance))
-//
-//                CategoryView(title: "Documentaries", category: .documentary, vm: CategoryViewModel(category: .documentary))
 
             }
         }
+        .padding(.horizontal, 8)
         .preferredColorScheme(.dark)
     }
     
@@ -60,14 +45,17 @@ struct HomeView_Previews: PreviewProvider {
 
 extension HomeView {
     
+    // Large "featured" show/movie at the top
     @ViewBuilder
     var featured: some View {
         ZStack {
+            // featured item image
             Image("better_call_saul")
                 .resizable()
                 .scaledToFill()
-                .clipShape(RoundedRectangle(cornerRadius: 15))
+                .clipShape(RoundedRectangle(cornerRadius: 15, style: .continuous))
             
+            // genres and buttons
             VStack {
                 
                 Spacer()
@@ -117,9 +105,10 @@ extension HomeView {
         }
         .frame(width: 330)
         .padding(.bottom, 40)
-        .shadow(color: Color.secondary, radius: 10)
+        .shadow(color: Color.secondary, radius: 4)
     }
     
+    // "TV Shows", "Movies", and "Categories" buttons under top bar
     @ViewBuilder
     var topOptions: some View {
         
