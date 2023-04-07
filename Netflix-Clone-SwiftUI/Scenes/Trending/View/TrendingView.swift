@@ -21,8 +21,8 @@ struct TrendingView: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHStack {
-                    ForEach(vm.trending.results) { result in
-                        TrendingItemView(result: result)
+                    ForEach(vm.items.results) { result in
+                        TrendingItemView(item: result)
                     }
                 }
                 

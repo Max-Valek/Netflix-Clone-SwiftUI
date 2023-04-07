@@ -11,11 +11,10 @@ import Foundation
 
 final class TrendingViewModel: ObservableObject {
     
-    @Published private(set) var trending: Trending
+    @Published private(set) var items: ItemsList
     
     init() {
-        self.trending = try! StaticJSONMapper.decode(file: "Trending", type: Trending.self)
-//        print(self.trending)
+        self.items = try! StaticJSONMapper.decode(file: "Trending", type: ItemsList.self)
     }
     
 }

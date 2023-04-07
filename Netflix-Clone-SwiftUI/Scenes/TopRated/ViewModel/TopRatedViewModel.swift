@@ -9,9 +9,9 @@ import Foundation
 
 final class TopRatedViewModel: ObservableObject {
     
-    @Published private(set) var topRated: TopRated
+    @Published private(set) var items: ItemsList
     
     init() {
-        self.topRated = try! StaticJSONMapper.decode(file: "TopRated", type: TopRated.self)
+        self.items = try! StaticJSONMapper.decode(file: "TopRated", type: ItemsList.self)
     }
 }

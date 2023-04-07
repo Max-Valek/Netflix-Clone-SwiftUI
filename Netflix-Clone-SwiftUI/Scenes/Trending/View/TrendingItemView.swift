@@ -10,7 +10,7 @@ import SwiftUI
 
 struct TrendingItemView: View {
     
-    let result: Result
+    let item: Item
     
     var body: some View {
         VStack {
@@ -21,13 +21,13 @@ struct TrendingItemView: View {
 
 struct TrendingItemView_Previews: PreviewProvider {
     
-    private static var previewResult: Result {
-        let result = try! StaticJSONMapper.decode(file: "Trending", type: Trending.self)
+    private static var previewResult: Item {
+        let result = try! StaticJSONMapper.decode(file: "Trending", type: ItemsList.self)
         return result.results[0]
     }
     
     static var previews: some View {
-        TrendingItemView(result: previewResult)
+        TrendingItemView(item: previewResult)
     }
 }
 
@@ -35,7 +35,7 @@ private extension TrendingItemView {
     
     @ViewBuilder
     var poster: some View {
-        if let posterURL = URL(string: "https://image.tmdb.org/t/p/w500\(result.posterPath)") {
+        if let posterURL = URL(string: "https://image.tmdb.org/t/p/w500\(item.posterPath)") {
             
             AsyncImage(url: posterURL) { image in
                 image

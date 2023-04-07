@@ -9,7 +9,7 @@ import Foundation
 
 final class GenreViewModel: ObservableObject {
     
-    @Published var category: Category? // make category optional
+    @Published var items: ItemsList? // make category optional
     
     let genre: Genre
     
@@ -19,9 +19,9 @@ final class GenreViewModel: ObservableObject {
     
     func fetchCategoryData() {
         do {
-            let category = try StaticJSONMapper.decode(file: genre.file, type: Category.self) // decode the JSON data
+            let genreItems = try StaticJSONMapper.decode(file: genre.file, type: ItemsList.self)
             DispatchQueue.main.async {
-                self.category = category // update the category property on the main thread
+                self.items = genreItems
             }
         } catch {
             print("Failed to fetch category data: \(error)")

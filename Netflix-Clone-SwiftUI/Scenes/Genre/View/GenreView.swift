@@ -26,7 +26,7 @@ struct GenreView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 
                 LazyHStack {
-                    ForEach(vm.category?.results ?? []) { result in // use optional chaining to safely unwrap category
+                    ForEach(vm.items?.results ?? []) { result in // use optional chaining to safely unwrap category
                         GenreItemView(item: result)
                     }
                 }

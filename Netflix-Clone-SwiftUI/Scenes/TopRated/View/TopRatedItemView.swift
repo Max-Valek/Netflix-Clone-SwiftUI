@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TopRatedItemView: View {
     
-    let topRated: TopRatedItem
+    let item: Item
     
     var body: some View {
         VStack {
@@ -19,13 +19,13 @@ struct TopRatedItemView: View {
 }
 
 struct TopRatedItemView_Previews: PreviewProvider {
-    private static var previewResult: TopRatedItem {
-        let result = try! StaticJSONMapper.decode(file: "TopRated", type: TopRated.self)
+    private static var previewResult: Item {
+        let result = try! StaticJSONMapper.decode(file: "TopRated", type: ItemsList.self)
         return result.results[0]
     }
     
     static var previews: some View {
-        TopRatedItemView(topRated: previewResult)
+        TopRatedItemView(item: previewResult)
     }
 }
 
@@ -33,7 +33,7 @@ private extension TopRatedItemView {
     
     @ViewBuilder
     var poster: some View {
-        if let posterURL = URL(string: "https://image.tmdb.org/t/p/w500\(topRated.posterPath)") {
+        if let posterURL = URL(string: "https://image.tmdb.org/t/p/w500\(item.posterPath)") {
             
             AsyncImage(url: posterURL) { image in
                 image

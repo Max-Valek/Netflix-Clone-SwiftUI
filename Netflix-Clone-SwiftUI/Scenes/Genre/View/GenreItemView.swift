@@ -10,7 +10,7 @@ import SwiftUI
 
 struct GenreItemView: View {
     
-    let item: CategoryItem
+    let item: Item
     
     var body: some View {
         VStack {
@@ -20,8 +20,8 @@ struct GenreItemView: View {
 }
 
 struct GenreItemView_Previews: PreviewProvider {
-    private static var previewResult: CategoryItem {
-        let result = try! StaticJSONMapper.decode(file: "Action", type: Category.self)
+    private static var previewResult: Item {
+        let result = try! StaticJSONMapper.decode(file: "Action", type: ItemsList.self)
         return result.results[0]
     }
     

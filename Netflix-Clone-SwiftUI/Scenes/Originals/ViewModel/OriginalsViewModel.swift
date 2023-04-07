@@ -9,11 +9,9 @@ import Foundation
 
 final class OriginalsViewModel: ObservableObject {
     
-    @Published private(set) var originals: Originals
+    @Published private(set) var items: ItemsList
     
     init() {
-        self.originals = try! StaticJSONMapper.decode(file: "Originals", type: Originals.self)
-//        print(self.originals)
+        self.items = try! StaticJSONMapper.decode(file: "Originals", type: ItemsList.self)
     }
-    
 }

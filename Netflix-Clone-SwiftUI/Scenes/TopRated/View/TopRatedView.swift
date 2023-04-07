@@ -22,8 +22,8 @@ struct TopRatedView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 
                 LazyHStack {
-                    ForEach(vm.topRated.results) { result in
-                        TopRatedItemView(topRated: result)
+                    ForEach(vm.items.results) { result in
+                        TopRatedItemView(item: result)
                     }
                 }
             }

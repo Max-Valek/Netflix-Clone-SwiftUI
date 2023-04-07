@@ -9,7 +9,7 @@ import SwiftUI
 
 struct OriginalsItemView: View {
     
-    let original: Original
+    let item: Item
     
     var body: some View {
         VStack {
@@ -20,13 +20,13 @@ struct OriginalsItemView: View {
 
 struct OriginalsItemView_Previews: PreviewProvider {
     
-    private static var previewResult: Original {
-        let result = try! StaticJSONMapper.decode(file: "Originals", type: Originals.self)
+    private static var previewResult: Item {
+        let result = try! StaticJSONMapper.decode(file: "Originals", type: ItemsList.self)
         return result.results[0]
     }
     
     static var previews: some View {
-        OriginalsItemView(original: previewResult)
+        OriginalsItemView(item: previewResult)
     }
 }
 
@@ -34,7 +34,7 @@ private extension OriginalsItemView {
     
     @ViewBuilder
     var poster: some View {
-        if let posterURL = URL(string: "https://image.tmdb.org/t/p/w500\(original.posterPath)") {
+        if let posterURL = URL(string: "https://image.tmdb.org/t/p/w500\(item.posterPath)") {
             
             AsyncImage(url: posterURL) { image in
                 image

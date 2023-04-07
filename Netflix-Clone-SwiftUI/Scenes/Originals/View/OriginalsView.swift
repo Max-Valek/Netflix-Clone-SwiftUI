@@ -20,8 +20,8 @@ struct OriginalsView: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHStack {
-                    ForEach(vm.originals.results) { result in
-                        OriginalsItemView(original: result)
+                    ForEach(vm.items.results) { result in
+                        OriginalsItemView(item: result)
                     }
                 }
                 
