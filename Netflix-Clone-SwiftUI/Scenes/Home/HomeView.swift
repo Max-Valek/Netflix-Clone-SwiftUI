@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         
-        ScrollView {
+        ScrollView(showsIndicators: false) {
             
             featured
             
@@ -38,6 +38,51 @@ struct HomeView: View {
                     .padding(.leading)
                 
                 TopRatedView()
+            }
+            .padding(.bottom)
+            
+            VStack(alignment: .leading) {
+                Text("Action")
+                    .fontWeight(.bold)
+                    .padding(.leading)
+                
+                GenreView(genre: Genre.action, vm: GenreViewModel(genre: Genre.action))
+            }
+            .padding(.bottom)
+            
+            VStack(alignment: .leading) {
+                Text("Comedy")
+                    .fontWeight(.bold)
+                    .padding(.leading)
+                
+                GenreView(genre: Genre.comedy, vm: GenreViewModel(genre: Genre.comedy))
+            }
+            .padding(.bottom)
+            
+            VStack(alignment: .leading) {
+                Text("Horror")
+                    .fontWeight(.bold)
+                    .padding(.leading)
+                
+                GenreView(genre: Genre.horror, vm: GenreViewModel(genre: Genre.horror))
+            }
+            .padding(.bottom)
+            
+            VStack(alignment: .leading) {
+                Text("Romance")
+                    .fontWeight(.bold)
+                    .padding(.leading)
+                
+                GenreView(genre: Genre.romance, vm: GenreViewModel(genre: Genre.romance))
+            }
+            .padding(.bottom)
+            
+            VStack(alignment: .leading) {
+                Text("Documentaries")
+                    .fontWeight(.bold)
+                    .padding(.leading)
+                
+                GenreView(genre: Genre.documentary, vm: GenreViewModel(genre: Genre.documentary))
             }
             .padding(.bottom)
         }
