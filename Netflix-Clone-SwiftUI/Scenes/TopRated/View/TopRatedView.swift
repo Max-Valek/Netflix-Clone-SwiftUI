@@ -13,14 +13,22 @@ struct TopRatedView: View {
     
     var body: some View {
         
-        ScrollView(.horizontal, showsIndicators: false) {
+        VStack(alignment: .leading) {
             
-            LazyHStack {
-                ForEach(vm.topRated.results) { result in
-                    TopRatedItemView(topRated: result)
+            Text("Top Rated")
+                .fontWeight(.bold)
+                .padding(.leading)
+            
+            ScrollView(.horizontal, showsIndicators: false) {
+                
+                LazyHStack {
+                    ForEach(vm.topRated.results) { result in
+                        TopRatedItemView(topRated: result)
+                    }
                 }
             }
         }
+        .padding(.bottom)
     }
 }
 

@@ -13,14 +13,22 @@ struct TrendingView: View {
     
     var body: some View {
         
-        ScrollView(.horizontal, showsIndicators: false) {
-            LazyHStack {
-                ForEach(vm.trending.results) { result in
-                    TrendingItemView(result: result)
-                }
-            }
+        VStack(alignment: .leading) {
             
+            Text("Trending")
+                .fontWeight(.bold)
+                .padding(.leading)
+            
+            ScrollView(.horizontal, showsIndicators: false) {
+                LazyHStack {
+                    ForEach(vm.trending.results) { result in
+                        TrendingItemView(result: result)
+                    }
+                }
+                
+            }
         }
+        .padding(.bottom)
     }
 }
 

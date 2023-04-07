@@ -12,89 +12,33 @@ struct HomeView: View {
     var body: some View {
         
         VStack {
+            // For <user>, cast and search buttons, user photo
             HomeTopView()
             
             ScrollView(showsIndicators: false) {
                 
-                featured
-                
-                VStack(alignment: .leading) {
-                    Text("Trending")
-                        .fontWeight(.bold)
-                        .padding(.leading)
-                    
-                    TrendingView()
-                }
-                .padding(.bottom)
-                
-                VStack(alignment: .leading) {
-                    Text("Netflix Originals")
-                        .fontWeight(.bold)
-                        .padding(.leading)
-                    
-                    OriginalsView()
-                }
-                .padding(.bottom)
-                
-                HStack {
-                    Text("TV Shows")
-                    Text("Movies")
-                    Text("Categories")
+                VStack {
+                    // TV Shows, Movies, and Categories Buttons
+                    topOptions
+                    // Featured Show/Movie
+                    featured
                 }
                 
-                VStack(alignment: .leading) {
-                    Text("Top Rated")
-                        .fontWeight(.bold)
-                        .padding(.leading)
-                    
-                    TopRatedView()
-                }
-                .padding(.bottom)
+                TrendingView()
                 
-                VStack(alignment: .leading) {
-                    Text("Action")
-                        .fontWeight(.bold)
-                        .padding(.leading)
-                    
-                    GenreView(genre: Genre.action, vm: GenreViewModel(genre: Genre.action))
-                }
-                .padding(.bottom)
+                OriginalsView()
                 
-                VStack(alignment: .leading) {
-                    Text("Comedy")
-                        .fontWeight(.bold)
-                        .padding(.leading)
-                    
-                    GenreView(genre: Genre.comedy, vm: GenreViewModel(genre: Genre.comedy))
-                }
-                .padding(.bottom)
+                TopRatedView()
                 
-                VStack(alignment: .leading) {
-                    Text("Horror")
-                        .fontWeight(.bold)
-                        .padding(.leading)
-                    
-                    GenreView(genre: Genre.horror, vm: GenreViewModel(genre: Genre.horror))
-                }
-                .padding(.bottom)
+                GenreView(title: "Action", genre: Genre.action, vm: GenreViewModel(genre: Genre.action))
+
+                GenreView(title: "Comedy", genre: Genre.comedy, vm: GenreViewModel(genre: Genre.comedy))
                 
-                VStack(alignment: .leading) {
-                    Text("Romance")
-                        .fontWeight(.bold)
-                        .padding(.leading)
-                    
-                    GenreView(genre: Genre.romance, vm: GenreViewModel(genre: Genre.romance))
-                }
-                .padding(.bottom)
+                GenreView(title: "Horror", genre: Genre.horror, vm: GenreViewModel(genre: Genre.horror))
                 
-                VStack(alignment: .leading) {
-                    Text("Documentaries")
-                        .fontWeight(.bold)
-                        .padding(.leading)
-                    
-                    GenreView(genre: Genre.documentary, vm: GenreViewModel(genre: Genre.documentary))
-                }
-                .padding(.bottom)
+                GenreView(title: "Romance", genre: Genre.romance, vm: GenreViewModel(genre: Genre.romance))
+                
+                GenreView(title: "Documentaries", genre: Genre.documentary, vm: GenreViewModel(genre: Genre.documentary))
             }
         }
         .preferredColorScheme(.dark)
@@ -169,5 +113,53 @@ extension HomeView {
         .frame(width: 330)
         .padding(.bottom, 40)
         .shadow(color: Color.secondary, radius: 10)
+    }
+    
+    @ViewBuilder
+    var topOptions: some View {
+        
+        HStack {
+            
+            Button {
+                //
+            } label: {
+                Text("TV Shows")
+                    .font(.system(size: 12))
+            }
+            .padding()
+            .foregroundColor(.white)
+            .overlay(
+                    Capsule()
+                        .stroke(.secondary, lineWidth: 1)
+                )
+            
+            Button {
+                //
+            } label: {
+                Text("Movies")
+                    .font(.system(size: 12))
+            }
+            .padding()
+            .foregroundColor(.white)
+            .overlay(
+                    Capsule()
+                        .stroke(.secondary, lineWidth: 1)
+                )
+            
+            Button {
+                //
+            } label: {
+                Text("Categories")
+                    .font(.system(size: 12))
+            }
+            .padding()
+            .foregroundColor(.white)
+            .overlay(
+                    Capsule()
+                        .stroke(.secondary, lineWidth: 1)
+                )
+
+        }
+        .padding()
     }
 }

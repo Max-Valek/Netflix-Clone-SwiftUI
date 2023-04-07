@@ -9,28 +9,38 @@ import SwiftUI
 
 struct GenreView: View {
     
-    var genre: Genre // make genre a variable
+    var title: String
     
-    @StateObject var vm: GenreViewModel // remove the initialization
+    var genre: Genre
+    
+    @StateObject var vm: GenreViewModel
     
     var body: some View {
         
-        ScrollView(.horizontal, showsIndicators: false) {
+        VStack(alignment: .leading) {
             
-            LazyHStack {
-                ForEach(vm.category?.results ?? []) { result in // use optional chaining to safely unwrap category
-                    GenreItemView(item: result)
+            Text(title)
+                .fontWeight(.bold)
+                .padding(.leading)
+            
+            ScrollView(.horizontal, showsIndicators: false) {
+                
+                LazyHStack {
+                    ForEach(vm.category?.results ?? []) { result in // use optional chaining to safely unwrap category
+                        GenreItemView(item: result)
+                    }
                 }
             }
+            .onAppear {
+                vm.fetchCategoryData() // call fetchCategoryData to fetch data when the view appears
+            }
         }
-        .onAppear {
-            vm.fetchCategoryData() // call fetchCategoryData to fetch data when the view appears
-        }
+        .padding(.bottom)
     }
 }
 
 struct GenreView_Previews: PreviewProvider {
     static var previews: some View {
-        GenreView(genre: Genre.action, vm: GenreViewModel(genre: Genre.action))
+        GenreView(title: "Action", genre: Genre.action, vm: GenreViewModel(genre: Genre.action))
     }
 }

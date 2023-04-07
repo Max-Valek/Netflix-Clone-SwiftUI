@@ -12,14 +12,22 @@ struct OriginalsView: View {
     
     var body: some View {
         
-        ScrollView(.horizontal, showsIndicators: false) {
-            LazyHStack {
-                ForEach(vm.originals.results) { result in
-                    OriginalsItemView(original: result)
-                }
-            }
+        VStack(alignment: .leading) {
             
+            Text("Netflix Originals")
+                .fontWeight(.bold)
+                .padding(.leading)
+            
+            ScrollView(.horizontal, showsIndicators: false) {
+                LazyHStack {
+                    ForEach(vm.originals.results) { result in
+                        OriginalsItemView(original: result)
+                    }
+                }
+                
+            }
         }
+        .padding(.bottom)
     }
 }
 

@@ -38,6 +38,7 @@
 		9D6CB72729DF6A9F000C57C2 /* TopRatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CB72629DF6A9F000C57C2 /* TopRatedView.swift */; };
 		9D6CB72929DF6AAC000C57C2 /* TopRatedItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CB72829DF6AAC000C57C2 /* TopRatedItemView.swift */; };
 		9DB8D11229E071CD0023B857 /* HomeTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB8D11129E071CD0023B857 /* HomeTopView.swift */; };
+		9DEAF33F29E0B42C00AF9DE1 /* PosterImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAF33E29E0B42C00AF9DE1 /* PosterImageModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		9D6CB72829DF6AAC000C57C2 /* TopRatedItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedItemView.swift; sourceTree = "<group>"; };
 		9DB8D10F29E06C3D0023B857 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9DB8D11129E071CD0023B857 /* HomeTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopView.swift; sourceTree = "<group>"; };
+		9DEAF33E29E0B42C00AF9DE1 /* PosterImageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterImageModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 		9D6CB6F629DF4874000C57C2 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				9DEAF33D29E0B41300AF9DE1 /* Modifiers */,
 				9D6CB70B29DF569E000C57C2 /* JSON */,
 				9D6CB70829DF55ED000C57C2 /* StaticJSON */,
 				9D6CB6FC29DF4B29000C57C2 /* Model */,
@@ -310,6 +313,14 @@
 			path = Top;
 			sourceTree = "<group>";
 		};
+		9DEAF33D29E0B41300AF9DE1 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				9DEAF33E29E0B42C00AF9DE1 /* PosterImageModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -397,6 +408,7 @@
 				9D6CB72529DF6A93000C57C2 /* TopRatedViewModel.swift in Sources */,
 				9DB8D11229E071CD0023B857 /* HomeTopView.swift in Sources */,
 				9D6CB70729DF4E43000C57C2 /* TrendingView.swift in Sources */,
+				9DEAF33F29E0B42C00AF9DE1 /* PosterImageModifier.swift in Sources */,
 				9D57BF9529E059A900F2CA3E /* GenreViewModel.swift in Sources */,
 				9D6CB71429DF630C000C57C2 /* Originals.swift in Sources */,
 				9D6CB6FE29DF4B36000C57C2 /* Trending.swift in Sources */,
