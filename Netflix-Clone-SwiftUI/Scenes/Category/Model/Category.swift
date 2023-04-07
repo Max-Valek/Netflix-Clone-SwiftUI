@@ -1,5 +1,5 @@
 //
-//  Genre.swift
+//  Category.swift
 //  Netflix-Clone-SwiftUI
 //
 //  Created by Max Valek on 4/7/23.
@@ -7,7 +7,11 @@
 
 import Foundation
 
-enum Genre {
+enum Category {
+    
+    case trending
+    case originals
+    case topRated
     case action
     case comedy
     case horror
@@ -15,8 +19,9 @@ enum Genre {
     case documentary
 }
 
-extension Genre {
+extension Category {
     
+    // -1 if not a genre
     var id: Int {
         switch self {
         case .action:
@@ -29,11 +34,19 @@ extension Genre {
             return 10749
         case .documentary:
             return 99
+        case .trending, .originals, .topRated:
+            return -1
         }
     }
     
     var file: String {
         switch self {
+        case .trending:
+            return "Trending"
+        case .originals:
+            return "Originals"
+        case .topRated:
+            return "TopRated"
         case .action:
             return "Action"
         case .comedy:

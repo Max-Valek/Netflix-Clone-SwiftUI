@@ -1,5 +1,5 @@
 //
-//  GenreView.swift
+//  CategoryView.swift
 //  Netflix-Clone-SwiftUI
 //
 //  Created by Max Valek on 4/7/23.
@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct GenreView: View {
+struct CategoryView: View {
     
     var title: String
     
-    var genre: Genre
+    var category: Category
     
-    @StateObject var vm: GenreViewModel
+    @StateObject var vm: CategoryViewModel
     
     var body: some View {
         
@@ -27,7 +27,7 @@ struct GenreView: View {
                 
                 LazyHStack {
                     ForEach(vm.items?.results ?? []) { result in // use optional chaining to safely unwrap category
-                        GenreItemView(item: result)
+                        CategoryItemView(item: result)
                     }
                 }
             }
@@ -39,8 +39,8 @@ struct GenreView: View {
     }
 }
 
-struct GenreView_Previews: PreviewProvider {
+struct CategoryView_Previews: PreviewProvider {
     static var previews: some View {
-        GenreView(title: "Action", genre: Genre.action, vm: GenreViewModel(genre: Genre.action))
+        CategoryView(title: "Action", category: Category.action, vm: CategoryViewModel(category: Category.action))
     }
 }

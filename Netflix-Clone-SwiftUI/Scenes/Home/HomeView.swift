@@ -24,21 +24,22 @@ struct HomeView: View {
                     featured
                 }
                 
-                TrendingView()
+                CategoryView(title: "Trending", category: .trending, vm: CategoryViewModel(category: .trending))
                 
-                OriginalsView()
+                CategoryView(title: "Netflix Originals", category: .originals, vm: CategoryViewModel(category: .originals))
                 
-                TopRatedView()
+                CategoryView(title: "Top Rated", category: .topRated, vm: CategoryViewModel(category: .topRated))
                 
-                GenreView(title: "Action", genre: Genre.action, vm: GenreViewModel(genre: Genre.action))
+                CategoryView(title: "Action", category: .action, vm: CategoryViewModel(category: .action))
+                
+                CategoryView(title: "Comedy", category: .comedy, vm: CategoryViewModel(category: .comedy))
+                
+                CategoryView(title: "Horror", category: .horror, vm: CategoryViewModel(category: .horror))
+                
+                CategoryView(title: "Romance", category: .romance, vm: CategoryViewModel(category: .romance))
+                
+                CategoryView(title: "Documentaries", category: .documentary, vm: CategoryViewModel(category: .documentary))
 
-                GenreView(title: "Comedy", genre: Genre.comedy, vm: GenreViewModel(genre: Genre.comedy))
-                
-                GenreView(title: "Horror", genre: Genre.horror, vm: GenreViewModel(genre: Genre.horror))
-                
-                GenreView(title: "Romance", genre: Genre.romance, vm: GenreViewModel(genre: Genre.romance))
-                
-                GenreView(title: "Documentaries", genre: Genre.documentary, vm: GenreViewModel(genre: Genre.documentary))
             }
         }
         .preferredColorScheme(.dark)
