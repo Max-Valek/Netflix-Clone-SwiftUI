@@ -37,6 +37,7 @@
 		9D6CB72529DF6A93000C57C2 /* TopRatedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CB72429DF6A93000C57C2 /* TopRatedViewModel.swift */; };
 		9D6CB72729DF6A9F000C57C2 /* TopRatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CB72629DF6A9F000C57C2 /* TopRatedView.swift */; };
 		9D6CB72929DF6AAC000C57C2 /* TopRatedItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6CB72829DF6AAC000C57C2 /* TopRatedItemView.swift */; };
+		9DB8D11229E071CD0023B857 /* HomeTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB8D11129E071CD0023B857 /* HomeTopView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		9D6CB72629DF6A9F000C57C2 /* TopRatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedView.swift; sourceTree = "<group>"; };
 		9D6CB72829DF6AAC000C57C2 /* TopRatedItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedItemView.swift; sourceTree = "<group>"; };
 		9DB8D10F29E06C3D0023B857 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9DB8D11129E071CD0023B857 /* HomeTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 		9D6CB6F329DF4797000C57C2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				9DB8D11029E071950023B857 /* Top */,
 				9D6CB6F429DF47A6000C57C2 /* HomeView.swift */,
 			);
 			path = Home;
@@ -299,6 +302,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		9DB8D11029E071950023B857 /* Top */ = {
+			isa = PBXGroup;
+			children = (
+				9DB8D11129E071CD0023B857 /* HomeTopView.swift */,
+			);
+			path = Top;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -380,6 +391,7 @@
 				9D6CB72929DF6AAC000C57C2 /* TopRatedItemView.swift in Sources */,
 				9D6CB70A29DF5600000C57C2 /* StaticJSONMapper.swift in Sources */,
 				9D6CB72529DF6A93000C57C2 /* TopRatedViewModel.swift in Sources */,
+				9DB8D11229E071CD0023B857 /* HomeTopView.swift in Sources */,
 				9D6CB70729DF4E43000C57C2 /* TrendingView.swift in Sources */,
 				9D57BF9529E059A900F2CA3E /* GenreViewModel.swift in Sources */,
 				9D6CB71429DF630C000C57C2 /* Originals.swift in Sources */,
