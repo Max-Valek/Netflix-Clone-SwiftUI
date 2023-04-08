@@ -16,6 +16,8 @@ struct CategoryItemDetailView: View {
     
     @ObservedObject var vm: CategoryViewModel
     
+    @Environment(\.dismiss) var dismiss
+    
     let item: Item
     
     let gridRows = Array(repeating: GridItem(.flexible()), count: 2)
@@ -79,13 +81,17 @@ struct CategoryItemDetailView: View {
                     Text("More Like This")
                         .font(.system(size: 18).bold())
                     
-//                    LazyHGrid(rows: gridRows) {
-//                        ForEach(0..<4) { index in
-//                            if let item = vm.items?.results[index] {
-//                                CategoryItemView(item: item, vm: vm)
-//                            }
-//                        }
-//                    }
+                    LazyVGrid(columns: gridRows) {
+                        ForEach(0..<4) { index in
+                            if let item = vm.items?.results[index] {
+                                Button {
+                                    self.dismiss()
+                                } label: {
+                                    CategoryItemView(item: item, vm: vm)
+                                }
+                            }
+                        }
+                    }
                 }
                 
                 Spacer()
