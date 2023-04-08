@@ -13,6 +13,8 @@ struct FastLaughsView: View {
         VStack {
             
             Text("Fast Laughs")
+            
+            Text("This is basically a TikTok-like feed with movie clips")
         }
         .padding(.horizontal, 8)
         .preferredColorScheme(.dark)

@@ -25,7 +25,7 @@ struct TopView: View {
                 
                 Image(systemName: "magnifyingglass")
                 
-                Image(systemName: "person.crop.circle.fill")
+                Image(systemName: "person.crop.square.fill")
             }
         }
         .font(.title2)
