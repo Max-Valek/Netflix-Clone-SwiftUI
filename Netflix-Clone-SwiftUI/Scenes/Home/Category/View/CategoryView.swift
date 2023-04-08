@@ -27,7 +27,7 @@ struct CategoryView: View {
                 
                 LazyHStack {
                     ForEach(vm.items?.results ?? []) { result in // use optional chaining to safely unwrap category
-                        CategoryItemView(item: result)
+                        CategoryItemView(item: result, vm: vm)
                     }
                 }
             }

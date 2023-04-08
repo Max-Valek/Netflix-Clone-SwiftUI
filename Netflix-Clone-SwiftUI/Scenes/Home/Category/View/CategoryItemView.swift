@@ -11,6 +11,8 @@ struct CategoryItemView: View {
     
     let item: Item
     
+    @ObservedObject var vm: CategoryViewModel
+    
     @State private var presentSheet: Bool = false
     
     var body: some View {
@@ -33,9 +35,10 @@ struct CategoryItemView: View {
                     presentSheet.toggle()
                 }
                 .sheet(isPresented: $presentSheet) {
-                    CategoryItemDetailView(item: item)
+                    CategoryItemDetailView(vm: vm, item: item)
                     
                 }
+                
             }
         }
     }
@@ -49,6 +52,6 @@ struct CategoryItemView_Previews: PreviewProvider {
     }
     
     static var previews: some View {
-        CategoryItemView(item: previewItem)
+        CategoryItemView(item: previewItem, vm: CategoryViewModel(category: .action))
     }
 }
