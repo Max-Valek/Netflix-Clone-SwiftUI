@@ -15,6 +15,22 @@ struct UpcomingView: View {
         
         ScrollView(showsIndicators: false) {
             
+            HStack {
+                Button {
+                    //
+                } label: {
+                    Text("🍿 Coming Soon")
+                        .padding(.horizontal)
+                        .padding(.vertical, 7)
+                        .foregroundColor(.black)
+                        .background(.white)
+                        .clipShape(Capsule())
+                }
+                
+                Spacer()
+            }
+            .padding(.leading, 24)
+            
             ForEach(vm.items?.results ?? []) { item in
                 UpcomingItemView(item: item)
             }
