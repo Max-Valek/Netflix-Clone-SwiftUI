@@ -113,7 +113,6 @@ extension HomeView {
     var topOptions: some View {
         
         HStack {
-            
             Button {
                 //
             } label: {

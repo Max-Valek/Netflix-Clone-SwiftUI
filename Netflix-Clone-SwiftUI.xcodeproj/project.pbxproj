@@ -26,6 +26,7 @@
 		9DEAF34F29E0D0F200AF9DE1 /* CategoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAF34E29E0D0F200AF9DE1 /* CategoryItemView.swift */; };
 		9DEAF35129E0D10500AF9DE1 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAF35029E0D10500AF9DE1 /* CategoryViewModel.swift */; };
 		9DEAF35329E0D10F00AF9DE1 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAF35229E0D10F00AF9DE1 /* Category.swift */; };
+		9DEAF35729E0E5AA00AF9DE1 /* CategoryItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAF35629E0E5AA00AF9DE1 /* CategoryItemDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		9DEAF34E29E0D0F200AF9DE1 /* CategoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemView.swift; sourceTree = "<group>"; };
 		9DEAF35029E0D10500AF9DE1 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
 		9DEAF35229E0D10F00AF9DE1 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		9DEAF35629E0E5AA00AF9DE1 /* CategoryItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +200,7 @@
 			children = (
 				9DEAF34C29E0D0E300AF9DE1 /* CategoryView.swift */,
 				9DEAF34E29E0D0F200AF9DE1 /* CategoryItemView.swift */,
+				9DEAF35629E0E5AA00AF9DE1 /* CategoryItemDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				9D6CB6F529DF47A6000C57C2 /* HomeView.swift in Sources */,
 				9DEAF34329E0C75400AF9DE1 /* ItemsList.swift in Sources */,
 				9D6CB6E529DF46EB000C57C2 /* Netflix_Clone_SwiftUIApp.swift in Sources */,
+				9DEAF35729E0E5AA00AF9DE1 /* CategoryItemDetailView.swift in Sources */,
 				9DEAF35329E0D10F00AF9DE1 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

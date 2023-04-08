@@ -11,6 +11,8 @@ struct CategoryItemView: View {
     
     let item: Item
     
+    @State private var presentSheet: Bool = false
+    
     var body: some View {
         
         VStack {
@@ -27,6 +29,13 @@ struct CategoryItemView: View {
                         .frame(width: 160, height: 240)
                 }
                 .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+                .onTapGesture {
+                    presentSheet.toggle()
+                }
+                .sheet(isPresented: $presentSheet) {
+                    CategoryItemDetailView(item: item)
+                    
+                }
             }
         }
     }
