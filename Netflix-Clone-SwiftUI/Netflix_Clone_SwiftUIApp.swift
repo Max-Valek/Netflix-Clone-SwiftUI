@@ -18,7 +18,7 @@ struct Netflix_Clone_SwiftUIApp: App {
     
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            MainView()
         }
     }
 }
