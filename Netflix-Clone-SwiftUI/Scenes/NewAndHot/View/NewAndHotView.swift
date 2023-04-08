@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct NewAndHotView: View {
+    
     var body: some View {
-        Text("New and Hot")
+        
+        VStack {
+            
+            TopView(title: "New & Hot")
+        }
+        .padding(.horizontal, 8)
+        .preferredColorScheme(.dark)
     }
 }
 

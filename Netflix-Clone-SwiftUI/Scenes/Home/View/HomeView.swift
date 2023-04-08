@@ -12,8 +12,8 @@ struct HomeView: View {
     var body: some View {
         
         VStack {
-            // For <user>, cast and search buttons, user photo
-            HomeTopView()
+            
+            TopView(title: "For Maximus")
             
             ScrollView(showsIndicators: false) {
                 

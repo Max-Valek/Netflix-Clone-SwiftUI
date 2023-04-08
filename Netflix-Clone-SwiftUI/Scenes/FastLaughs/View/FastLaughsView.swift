@@ -9,7 +9,13 @@ import SwiftUI
 
 struct FastLaughsView: View {
     var body: some View {
-        Text("Fast Laughs")
+        
+        VStack {
+            
+            Text("Fast Laughs")
+        }
+        .padding(.horizontal, 8)
+        .preferredColorScheme(.dark)
     }
 }
 

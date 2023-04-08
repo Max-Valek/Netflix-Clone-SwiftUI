@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct DownloadsView: View {
+    
     var body: some View {
-        Text("Downloads")
+        
+        VStack {
+            
+            TopView(title: "Downloads")
+        }
+        .padding(.horizontal, 8)
+        .preferredColorScheme(.dark)
     }
 }
 

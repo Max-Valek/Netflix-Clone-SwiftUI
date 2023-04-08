@@ -7,12 +7,15 @@
 
 import SwiftUI
 
-struct HomeTopView: View {
+struct TopView: View {
+    
+    var title: String
+    
     var body: some View {
         
         HStack {
             
-            Text("For Maximus")
+            Text(title)
                 
             
             Spacer()
@@ -30,8 +33,8 @@ struct HomeTopView: View {
     }
 }
 
-struct HomeTopView_Previews: PreviewProvider {
+struct TopView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeTopView()
+        TopView(title: "For Maximus")
     }
 }

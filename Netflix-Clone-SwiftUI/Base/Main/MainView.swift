@@ -30,6 +30,7 @@ struct MainView: View {
                     Label("Downloads", systemImage: "arrow.down.circle")
                 }
         }
+        .preferredColorScheme(.dark)
     }
 }
 
