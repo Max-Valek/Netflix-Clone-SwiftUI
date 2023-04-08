@@ -25,6 +25,11 @@
 		9DE4FAED29E1B5240017E7B5 /* NewAndHotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE4FAEC29E1B5240017E7B5 /* NewAndHotView.swift */; };
 		9DE4FAEF29E1B5370017E7B5 /* FastLaughsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE4FAEE29E1B5370017E7B5 /* FastLaughsView.swift */; };
 		9DE4FAF129E1B5440017E7B5 /* DownloadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE4FAF029E1B5440017E7B5 /* DownloadsView.swift */; };
+		9DE4FAF429E1BB240017E7B5 /* Upcoming.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DE4FAF329E1BB240017E7B5 /* Upcoming.json */; };
+		9DE4FAF729E1BC580017E7B5 /* NewAndHotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE4FAF629E1BC580017E7B5 /* NewAndHotViewModel.swift */; };
+		9DE4FAF929E1BD9C0017E7B5 /* UpcomingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE4FAF829E1BD9C0017E7B5 /* UpcomingView.swift */; };
+		9DE4FAFE29E1BE240017E7B5 /* UpcomingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE4FAFD29E1BE240017E7B5 /* UpcomingItemView.swift */; };
+		9DE4FB0029E1C4610017E7B5 /* UpcomingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE4FAFF29E1C4610017E7B5 /* UpcomingViewModel.swift */; };
 		9DEAF34329E0C75400AF9DE1 /* ItemsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAF34229E0C75400AF9DE1 /* ItemsList.swift */; };
 		9DEAF34D29E0D0E300AF9DE1 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAF34C29E0D0E300AF9DE1 /* CategoryView.swift */; };
 		9DEAF34F29E0D0F200AF9DE1 /* CategoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAF34E29E0D0F200AF9DE1 /* CategoryItemView.swift */; };
@@ -54,6 +59,11 @@
 		9DE4FAEC29E1B5240017E7B5 /* NewAndHotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAndHotView.swift; sourceTree = "<group>"; };
 		9DE4FAEE29E1B5370017E7B5 /* FastLaughsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastLaughsView.swift; sourceTree = "<group>"; };
 		9DE4FAF029E1B5440017E7B5 /* DownloadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsView.swift; sourceTree = "<group>"; };
+		9DE4FAF329E1BB240017E7B5 /* Upcoming.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Upcoming.json; sourceTree = "<group>"; };
+		9DE4FAF629E1BC580017E7B5 /* NewAndHotViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAndHotViewModel.swift; sourceTree = "<group>"; };
+		9DE4FAF829E1BD9C0017E7B5 /* UpcomingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingView.swift; sourceTree = "<group>"; };
+		9DE4FAFD29E1BE240017E7B5 /* UpcomingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingItemView.swift; sourceTree = "<group>"; };
+		9DE4FAFF29E1C4610017E7B5 /* UpcomingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewModel.swift; sourceTree = "<group>"; };
 		9DEAF34229E0C75400AF9DE1 /* ItemsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsList.swift; sourceTree = "<group>"; };
 		9DEAF34C29E0D0E300AF9DE1 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		9DEAF34E29E0D0F200AF9DE1 /* CategoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemView.swift; sourceTree = "<group>"; };
@@ -169,6 +179,7 @@
 				9D57BF9D29E05C9500F2CA3E /* Horror.json */,
 				9D57BF9F29E05CB700F2CA3E /* Romance.json */,
 				9D57BFA129E05CD900F2CA3E /* Documentary.json */,
+				9DE4FAF329E1BB240017E7B5 /* Upcoming.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -200,7 +211,9 @@
 		9DE4FAE429E1B2160017E7B5 /* NewAndHot */ = {
 			isa = PBXGroup;
 			children = (
+				9DE4FAFA29E1BDFC0017E7B5 /* Upcoming */,
 				9DE4FAE929E1B5010017E7B5 /* View */,
+				9DE4FAF529E1BC0A0017E7B5 /* ViewModel */,
 			);
 			path = NewAndHot;
 			sourceTree = "<group>";
@@ -253,12 +266,46 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		9DE4FAF529E1BC0A0017E7B5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9DE4FAF629E1BC580017E7B5 /* NewAndHotViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9DE4FAFA29E1BDFC0017E7B5 /* Upcoming */ = {
+			isa = PBXGroup;
+			children = (
+				9DE4FAFC29E1BE060017E7B5 /* View */,
+				9DE4FAFB29E1BE030017E7B5 /* ViewModel */,
+			);
+			path = Upcoming;
+			sourceTree = "<group>";
+		};
+		9DE4FAFB29E1BE030017E7B5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9DE4FAFF29E1C4610017E7B5 /* UpcomingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9DE4FAFC29E1BE060017E7B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9DE4FAF829E1BD9C0017E7B5 /* UpcomingView.swift */,
+				9DE4FAFD29E1BE240017E7B5 /* UpcomingItemView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		9DEAF34829E0D07500AF9DE1 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				9DEAF34929E0D07F00AF9DE1 /* Model */,
 				9DEAF34B29E0D08400AF9DE1 /* View */,
 				9DEAF34A29E0D08200AF9DE1 /* ViewModel */,
-				9DEAF34929E0D07F00AF9DE1 /* Model */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -367,6 +414,7 @@
 				9D6CB72029DF6A51000C57C2 /* TopRated.json in Resources */,
 				9D6CB71C29DF63FE000C57C2 /* Originals.json in Resources */,
 				9D57BFA229E05CD900F2CA3E /* Documentary.json in Resources */,
+				9DE4FAF429E1BB240017E7B5 /* Upcoming.json in Resources */,
 				9D6CB70D29DF56B3000C57C2 /* Trending.json in Resources */,
 				9D57BF9E29E05C9500F2CA3E /* Horror.json in Resources */,
 			);
@@ -379,15 +427,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DE4FB0029E1C4610017E7B5 /* UpcomingViewModel.swift in Sources */,
 				9D6CB70A29DF5600000C57C2 /* StaticJSONMapper.swift in Sources */,
 				9DB8D11229E071CD0023B857 /* TopView.swift in Sources */,
 				9DE4FAF129E1B5440017E7B5 /* DownloadsView.swift in Sources */,
 				9DEAF35129E0D10500AF9DE1 /* CategoryViewModel.swift in Sources */,
 				9DEAF34D29E0D0E300AF9DE1 /* CategoryView.swift in Sources */,
 				9DEAF34F29E0D0F200AF9DE1 /* CategoryItemView.swift in Sources */,
+				9DE4FAF729E1BC580017E7B5 /* NewAndHotViewModel.swift in Sources */,
 				9D6CB6F529DF47A6000C57C2 /* HomeView.swift in Sources */,
 				9DEAF34329E0C75400AF9DE1 /* ItemsList.swift in Sources */,
+				9DE4FAFE29E1BE240017E7B5 /* UpcomingItemView.swift in Sources */,
 				9DE4FAEF29E1B5370017E7B5 /* FastLaughsView.swift in Sources */,
+				9DE4FAF929E1BD9C0017E7B5 /* UpcomingView.swift in Sources */,
 				9DE4FAE729E1B2ED0017E7B5 /* MainView.swift in Sources */,
 				9D6CB6E529DF46EB000C57C2 /* Netflix_Clone_SwiftUIApp.swift in Sources */,
 				9DE4FAED29E1B5240017E7B5 /* NewAndHotView.swift in Sources */,

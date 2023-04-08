@@ -14,6 +14,8 @@ struct NewAndHotView: View {
         VStack {
             
             TopView(title: "New & Hot")
+            
+            UpcomingView()
         }
         .padding(.horizontal, 8)
         .preferredColorScheme(.dark)
