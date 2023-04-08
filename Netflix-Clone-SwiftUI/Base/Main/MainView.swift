@@ -8,29 +8,39 @@
 import SwiftUI
 
 struct MainView: View {
+    
+    @State var userSelected = false
+    
     var body: some View {
-        TabView {
-            HomeView()
-                .tabItem {
-                    Label("Home", systemImage: "house")
-                }
-            
-            NewAndHotView()
-                .tabItem {
-                    Label("New & Hot", systemImage: "play.rectangle.on.rectangle")
-                }
-            
-            FastLaughsView()
-                .tabItem {
-                    Label("Fast Laughs", systemImage: "face.smiling.inverse")
-                }
-            
-            DownloadsView()
-                .tabItem {
-                    Label("Downloads", systemImage: "arrow.down.circle")
-                }
+        
+        if userSelected {
+            TabView {
+                HomeView()
+                    .tabItem {
+                        Label("Home", systemImage: "house")
+                    }
+                
+                NewAndHotView()
+                    .tabItem {
+                        Label("New & Hot", systemImage: "play.rectangle.on.rectangle")
+                    }
+                
+                FastLaughsView()
+                    .tabItem {
+                        Label("Fast Laughs", systemImage: "face.smiling.inverse")
+                    }
+                
+                DownloadsView()
+                    .tabItem {
+                        Label("Downloads", systemImage: "arrow.down.circle")
+                    }
+            }
+            .preferredColorScheme(.dark)
         }
-        .preferredColorScheme(.dark)
+        else {
+            SelectUserView(userSelected: $userSelected)
+                .preferredColorScheme(.dark)
+        }
     }
 }
 

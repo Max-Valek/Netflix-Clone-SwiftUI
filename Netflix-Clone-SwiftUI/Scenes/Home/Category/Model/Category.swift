@@ -88,7 +88,7 @@ extension Category {
         case .trending:
             return "Trending"
         case .originals:
-            return "Originals"
+            return "Netflix Originals"
         case .topRated:
             return "TopRated"
         case .action:
