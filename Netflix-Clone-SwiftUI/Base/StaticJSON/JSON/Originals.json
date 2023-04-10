@@ -1,0 +1,413 @@
+{
+    "page": 1,
+    "results": [
+        {
+            "backdrop_path": "/xZUZ9i6vVayjyhR1vRo9Bjku4h.jpg",
+            "first_air_date": "2016-01-25",
+            "genre_ids": [
+                80,
+                10765
+            ],
+            "id": 63174,
+            "name": "Lucifer",
+            "origin_country": [
+                "US"
+            ],
+            "original_language": "en",
+            "original_name": "Lucifer",
+            "overview": "Bored and unhappy as the Lord of Hell, Lucifer Morningstar abandoned his throne and retired to Los Angeles, where he has teamed up with LAPD detective Chloe Decker to take down criminals. But the longer he's away from the underworld, the greater the threat that the worst of humanity could escape.",
+            "popularity": 960.99,
+            "poster_path": "/ekZobS8isE6mA53RAiGDG93hBxL.jpg",
+            "vote_average": 8.5,
+            "vote_count": 13350
+        },
+        {
+            "backdrop_path": "/26uCzg0yigXqjcM9dCGCDihoXLM.jpg",
+            "first_air_date": "2023-03-23",
+            "genre_ids": [
+                18,
+                9648
+            ],
+            "id": 129552,
+            "name": "The Night Agent",
+            "origin_country": [
+                "US"
+            ],
+            "original_language": "en",
+            "original_name": "The Night Agent",
+            "overview": "While monitoring an emergency line, a vigilant FBI agent answers a call that plunges him into a deadly conspiracy involving a mole at the White House.",
+            "popularity": 892.554,
+            "poster_path": "/xjsx6rGEgHl2tUqkimo6Bz2KzVo.jpg",
+            "vote_average": 8,
+            "vote_count": 120
+        },
+        {
+            "backdrop_path": "/iHSwvRVsRyxpX7FE7GbviaDvgGZ.jpg",
+            "first_air_date": "2022-11-23",
+            "genre_ids": [
+                10765,
+                9648,
+                35
+            ],
+            "id": 119051,
+            "name": "Wednesday",
+            "origin_country": [
+                "US"
+            ],
+            "original_language": "en",
+            "original_name": "Wednesday",
+            "overview": "Wednesday Addams is sent to Nevermore Academy, a bizarre boarding school where she attempts to master her psychic powers, stop a monstrous killing spree of the town citizens, and solve the supernatural mystery that affected her family 25 years ago — all while navigating her new relationships.",
+            "popularity": 639.885,
+            "poster_path": "/9PFonBhy4cQy7Jz20NpMygczOkv.jpg",
+            "vote_average": 8.6,
+            "vote_count": 6814
+        },
+        {
+            "backdrop_path": "/AqGVr9TyflkFyRwocTr6VscDYPX.jpg",
+            "first_air_date": "2023-03-29",
+            "genre_ids": [
+                99
+            ],
+            "id": 221522,
+            "name": "Emergency: NYC",
+            "origin_country": [
+                "US"
+            ],
+            "original_language": "en",
+            "original_name": "Emergency: NYC",
+            "overview": "This gripping docuseries follows New York City's frontline medical professionals as they balance the intensity of their work with their personal lives.",
+            "popularity": 415.481,
+            "poster_path": "/3pdVKXRnEEf2YUzm4net4MFEWV5.jpg",
+            "vote_average": 7.4,
+            "vote_count": 8
+        },
+        {
+            "backdrop_path": "/56v2KjBlU4XaOv9rVYEQypROD7P.jpg",
+            "first_air_date": "2016-07-15",
+            "genre_ids": [
+                18,
+                10765,
+                9648
+            ],
+            "id": 66732,
+            "name": "Stranger Things",
+            "origin_country": [
+                "US"
+            ],
+            "original_language": "en",
+            "original_name": "Stranger Things",
+            "overview": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.",
+            "popularity": 308.727,
+            "poster_path": "/49WJfeN0moxb9IPfGn8AIqMGskD.jpg",
+            "vote_average": 8.6,
+            "vote_count": 15344
+        },
+        {
+            "backdrop_path": "/7vCSrzwqS5PEm0i5mHlkDfjHcnX.jpg",
+            "first_air_date": "2022-12-30",
+            "genre_ids": [
+                18
+            ],
+            "id": 136283,
+            "name": "The Glory",
+            "origin_country": [
+                "KR"
+            ],
+            "original_language": "ko",
+            "original_name": "더 글로리",
+            "overview": "After a childhood marked by pain and violence, a woman puts a carefully planned revenge scheme in motion.",
+            "popularity": 288.886,
+            "poster_path": "/6jOpyXVzQyYL4QB12VRpHUxdwg1.jpg",
+            "vote_average": 8.6,
+            "vote_count": 333
+        },
+        {
+            "backdrop_path": "/8Xs20y8gFR0W9u8Yy9NKdpZtSu7.jpg",
+            "first_air_date": "2022-01-28",
+            "genre_ids": [
+                10759,
+                18,
+                10765
+            ],
+            "id": 99966,
+            "name": "All of Us Are Dead",
+            "origin_country": [
+                "KR"
+            ],
+            "original_language": "ko",
+            "original_name": "지금 우리 학교는",
+            "overview": "A high school becomes ground zero for a zombie virus outbreak. Trapped students must fight their way out — or turn into one of the rabid infected.",
+            "popularity": 277.753,
+            "poster_path": "/pTEFqAjLd5YTsMD6NSUxV6Dq7A6.jpg",
+            "vote_average": 8.4,
+            "vote_count": 3096
+        },
+        {
+            "backdrop_path": "/vmaiCsfTQ2SSfMSWsPHcFSubPpD.jpg",
+            "first_air_date": "2018-09-09",
+            "genre_ids": [
+                9648,
+                80,
+                18
+            ],
+            "id": 78191,
+            "name": "You",
+            "origin_country": [
+                "US"
+            ],
+            "original_language": "en",
+            "original_name": "You",
+            "overview": "A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself into the lives of those he is transfixed by.",
+            "popularity": 256.951,
+            "poster_path": "/7bEYwjUvlJW7GerM8GYmqwl4oS3.jpg",
+            "vote_average": 8.1,
+            "vote_count": 2581
+        },
+        {
+            "backdrop_path": "/zymbuoBoL1i94xAOzVJF6IuWLfD.jpg",
+            "first_air_date": "2018-05-02",
+            "genre_ids": [
+                10759,
+                18,
+                35
+            ],
+            "id": 77169,
+            "name": "Cobra Kai",
+            "origin_country": [
+                "US"
+            ],
+            "original_language": "en",
+            "original_name": "Cobra Kai",
+            "overview": "This Karate Kid sequel series picks up 30 years after the events of the 1984 All Valley Karate Tournament and finds Johnny Lawrence on the hunt for redemption by reopening the infamous Cobra Kai karate dojo. This reignites his old rivalry with the successful Daniel LaRusso, who has been working to maintain the balance in his life without mentor Mr. Miyagi.",
+            "popularity": 241.472,
+            "poster_path": "/m7tG5E1EbywuwTsl6hq990So0Bx.jpg",
+            "vote_average": 8.2,
+            "vote_count": 5534
+        },
+        {
+            "backdrop_path": "/iq5L971DFW1SwLJdvl7OpPI1QeZ.jpg",
+            "first_air_date": "2021-06-17",
+            "genre_ids": [
+                16,
+                10759,
+                10765
+            ],
+            "id": 114868,
+            "name": "Record of Ragnarok",
+            "origin_country": [
+                "JP"
+            ],
+            "original_language": "ja",
+            "original_name": "終末のワルキューレ",
+            "overview": "Before eradicating humankind from the world, the gods give them one last chance to prove themselves worthy of survival. Let the Ragnarok battles begin.",
+            "popularity": 240.615,
+            "poster_path": "/kTs2WNZOukpWdNhoRlH94pSJ3xf.jpg",
+            "vote_average": 8.5,
+            "vote_count": 1365
+        },
+        {
+            "backdrop_path": "/3SfKp1aTkXdxl1jSsURjHycAHAO.jpg",
+            "first_air_date": "2022-01-27",
+            "genre_ids": [
+                10764
+            ],
+            "id": 156077,
+            "name": "I Am Georgina",
+            "origin_country": [
+                "ES"
+            ],
+            "original_language": "es",
+            "original_name": "Soy Georgina",
+            "overview": "Join Georgina Rodríguez — mom, influencer, businesswoman and Cristiano Ronaldo's partner — in this emotional and in-depth portrait of her daily life.",
+            "popularity": 229.661,
+            "poster_path": "/70e3SQBIAcjKSibWoyCA7lBMZA8.jpg",
+            "vote_average": 7.1,
+            "vote_count": 283
+        },
+        {
+            "backdrop_path": "/uCqXSfHymdbDMsFx8t0u0OPSuve.jpg",
+            "first_air_date": "2015-10-10",
+            "genre_ids": [
+                10759,
+                18,
+                10768
+            ],
+            "id": 63333,
+            "name": "The Last Kingdom",
+            "origin_country": [
+                "GB"
+            ],
+            "original_language": "en",
+            "original_name": "The Last Kingdom",
+            "overview": "A show of heroic deeds and epic battles with a thematic depth that embraces politics, religion, warfare, courage, love, loyalty and our universal search for identity. Combining real historical figures and events with fictional characters, it is the story of how a people combined their strength under one of the most iconic kings of history in order to reclaim their land for themselves and build a place they call home.",
+            "popularity": 207.363,
+            "poster_path": "/8eJf0hxgIhE6QSxbtuNCekTddy1.jpg",
+            "vote_average": 8.3,
+            "vote_count": 1376
+        },
+        {
+            "backdrop_path": "/jlbIkIkiNCvfGt8b9Vq5xiX2nvK.jpg",
+            "first_air_date": "2023-02-22",
+            "genre_ids": [
+                18,
+                9648
+            ],
+            "id": 216811,
+            "name": "Triptych",
+            "origin_country": [
+                "MX"
+            ],
+            "original_language": "es",
+            "original_name": "Tríada",
+            "overview": "After learning she was separated at birth from her two identical sisters, Rebecca embarks on a perilous journey to uncover the truth about her origins.",
+            "popularity": 203.821,
+            "poster_path": "/cuV5GizaYLjGB3yikqJ5EH2rLus.jpg",
+            "vote_average": 7.9,
+            "vote_count": 80
+        },
+        {
+            "backdrop_path": "/9nBVkNBe4x9HKDAzxjxlIqecxCW.jpg",
+            "first_air_date": "2021-06-25",
+            "genre_ids": [
+                35,
+                18
+            ],
+            "id": 126280,
+            "name": "Sex/Life",
+            "origin_country": [
+                "US"
+            ],
+            "original_language": "en",
+            "original_name": "Sex/Life",
+            "overview": "A woman's daring sexual past collides with her married-with-kids present when the bad-boy ex she can't stop fantasizing about crashes back into her life.",
+            "popularity": 203.664,
+            "poster_path": "/kfcJl5e8CRWDU7e4vX6uNABPRbS.jpg",
+            "vote_average": 7.1,
+            "vote_count": 1135
+        },
+        {
+            "backdrop_path": "/hoVuI69nygLQBJ4FqgRKnukDeKt.jpg",
+            "first_air_date": "2022-12-25",
+            "genre_ids": [
+                10759,
+                10765
+            ],
+            "id": 106541,
+            "name": "The Witcher: Blood Origin",
+            "origin_country": [
+                "US"
+            ],
+            "original_language": "en",
+            "original_name": "The Witcher: Blood Origin",
+            "overview": "More than a thousand years before the world of The Witcher, seven outcasts in the elven world unite in a blood quest against an unstoppable power.",
+            "popularity": 188.617,
+            "poster_path": "/vpfJK9F0UJNcAIIeC42oJyKMnZQ.jpg",
+            "vote_average": 6.9,
+            "vote_count": 487
+        },
+        {
+            "backdrop_path": "/tl0mg7lOnS6tP8ngH0QwgMLQdpV.jpg",
+            "first_air_date": "2018-10-05",
+            "genre_ids": [
+                80,
+                9648,
+                18
+            ],
+            "id": 76669,
+            "name": "Elite",
+            "origin_country": [
+                "ES"
+            ],
+            "original_language": "es",
+            "original_name": "Élite",
+            "overview": "When three working class kids enroll in the most exclusive school in Spain, the clash between the wealthy and the poor students leads to tragedy.",
+            "popularity": 187.857,
+            "poster_path": "/3NTAbAiao4JLzFQw6YxP1YZppM8.jpg",
+            "vote_average": 8.1,
+            "vote_count": 8695
+        },
+        {
+            "backdrop_path": "/tI4A1Md9J5QHARl60TsMpekSsvg.jpg",
+            "first_air_date": "2023-01-19",
+            "genre_ids": [
+                16,
+                9648
+            ],
+            "id": 203704,
+            "name": "Junji Ito Maniac: Japanese Tales of the Macabre",
+            "origin_country": [
+                "JP"
+            ],
+            "original_language": "ja",
+            "original_name": "伊藤潤二『マニアック』",
+            "overview": "From the mind of horror manga maestro Junji Ito comes a spine-tingling selection of some of his most bizarre, disturbing and terrifying tales.",
+            "popularity": 181.107,
+            "poster_path": "/eE3vyu2F8upsQujhS8IP7QiG8Hm.jpg",
+            "vote_average": 7.3,
+            "vote_count": 42
+        },
+        {
+            "backdrop_path": "/qzSjrYSZAWrjhg6Yf3hCcfJE4o0.jpg",
+            "first_air_date": "2021-04-23",
+            "genre_ids": [
+                18,
+                10765
+            ],
+            "id": 85720,
+            "name": "Shadow and Bone",
+            "origin_country": [
+                "US"
+            ],
+            "original_language": "en",
+            "original_name": "Shadow and Bone",
+            "overview": "In a world cleaved in two by a massive barrier of perpetual darkness, a young soldier uncovers a power that might finally unite her country. But as she struggles to hone her power, dangerous forces plot against her. Thugs, thieves, assassins and saints are at war now, and it will take more than magic to survive.",
+            "popularity": 174.555,
+            "poster_path": "/mS9O9mjPlwpLTne4JgQlDkgREWA.jpg",
+            "vote_average": 8.1,
+            "vote_count": 1067
+        },
+        {
+            "backdrop_path": "/eDCDAXdY6so6xgGX4fuBDjLnoN6.jpg",
+            "first_air_date": "2019-01-11",
+            "genre_ids": [
+                35,
+                18
+            ],
+            "id": 81356,
+            "name": "Sex Education",
+            "origin_country": [
+                "GB"
+            ],
+            "original_language": "en",
+            "original_name": "Sex Education",
+            "overview": "Inexperienced Otis channels his sex therapist mom when he teams up with rebellious Maeve to set up an underground sex therapy clinic at school.",
+            "popularity": 171.721,
+            "poster_path": "/8j12tohv1NBZNmpU93f47sAKBbw.jpg",
+            "vote_average": 8.3,
+            "vote_count": 6371
+        },
+        {
+            "backdrop_path": "/iZu83GB1IM7VXL2X90m7iLHYUHU.jpg",
+            "first_air_date": "2018-09-24",
+            "genre_ids": [
+                18,
+                9648,
+                10765
+            ],
+            "id": 79696,
+            "name": "Manifest",
+            "origin_country": [
+                "US"
+            ],
+            "original_language": "en",
+            "original_name": "Manifest",
+            "overview": "After landing from a turbulent but routine flight, the crew and passengers of Montego Air Flight 828 discover five years have passed in what seemed like a few hours. As their new realities become clear, a deeper mystery unfolds and some of the returned passengers soon realize they may be meant for something greater than they ever thought possible.",
+            "popularity": 171.513,
+            "poster_path": "/eTemCphrglLKrXOsNRhYezHA7H9.jpg",
+            "vote_average": 7.7,
+            "vote_count": 1123
+        }
+    ],
+    "total_pages": 85,
+    "total_results": 1698
+}
