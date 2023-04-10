@@ -9,6 +9,8 @@
 
 # Icon must end with two \r
 Icon
+# ignore all static json
+JSON/
 
 # Thumbnails
 ._*
