@@ -9,7 +9,8 @@ import SwiftUI
 
 struct MainView: View {
     
-    @State var userSelected = false
+    // change back to false when running in simulator
+    @State var userSelected = true
     
     var body: some View {
         
@@ -17,7 +18,7 @@ struct MainView: View {
             TabView {
                 HomeView()
                     .tabItem {
-                        Label("Home", systemImage: "house")
+                        Label("Home", systemImage: "house.fill")
                     }
                 
                 NewAndHotView()
